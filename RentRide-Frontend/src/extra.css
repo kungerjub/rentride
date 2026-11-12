@@ -1,0 +1,257 @@
+/* สไตล์เพิ่มเติมสำหรับหน้าใหม่ (ใช้ร่วมกับ App.css เดิม) */
+
+/* ---------- Navbar ---------- */
+.logo-link {
+  text-decoration: none;
+}
+
+.nav-links a.active {
+  color: #2563eb;
+  font-weight: bold;
+}
+
+.nav-actions a.btn-primary {
+  background: #2563eb;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 8px;
+}
+
+.nav-user {
+  color: #555;
+  font-size: 14px;
+}
+
+/* ---------- ทั่วไป ---------- */
+.page {
+  padding: 40px 8%;
+}
+
+.page h1 {
+  margin-bottom: 20px;
+}
+
+.page-msg {
+  padding: 40px 8%;
+  color: #666;
+}
+
+.muted {
+  color: #666;
+  font-size: 14px;
+}
+
+.form-error {
+  color: #b91c1c;
+  background: #fee2e2;
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin: 14px 0;
+}
+
+/* ---------- การ์ดรถที่กดได้ ---------- */
+.car-card-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+}
+
+.car-card-link:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+/* ---------- ค้นหา ---------- */
+.filters {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.filters input,
+.filters select {
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.filters input {
+  flex: 1;
+  min-width: 220px;
+}
+
+/* ---------- ฟอร์ม ---------- */
+.form-card {
+  max-width: 420px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 30px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  font-size: 14px;
+  color: #444;
+}
+
+.form-group input {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.form-foot {
+  margin-top: 16px;
+  font-size: 14px;
+  color: #666;
+}
+
+.form-foot a {
+  color: #2563eb;
+}
+
+.btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-danger {
+  background: #dc2626;
+}
+
+.btn-small {
+  padding: 6px 12px;
+  font-size: 13px;
+}
+
+/* ---------- หน้ารายละเอียดรถ ---------- */
+.car-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.car-detail img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.car-detail .price {
+  color: #2563eb;
+  margin: 16px 0 24px;
+}
+
+.booking-form {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.booking-form h3 {
+  margin-bottom: 16px;
+}
+
+.summary {
+  margin-bottom: 14px;
+}
+
+/* ---------- ตาราง ---------- */
+.table-wrap {
+  overflow-x: auto;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table th,
+.data-table td {
+  text-align: left;
+  padding: 12px 10px;
+  border-bottom: 1px solid #eee;
+  vertical-align: middle;
+}
+
+.data-table th {
+  color: #555;
+  font-size: 14px;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* ---------- ป้ายสถานะ ---------- */
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.badge-pending {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.badge-approved {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.badge-picked_up {
+  background: #ede9fe;
+  color: #5b21b6;
+}
+
+.badge-returned {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.badge-cancelled {
+  background: #f3f4f6;
+  color: #6b7280;
+}
+
+@media (max-width: 700px) {
+  .car-detail {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-actions {
+    gap: 10px;
+    font-size: 14px;
+  }
+
+  .nav-user {
+    display: none;
+  }
+}
